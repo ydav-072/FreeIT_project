@@ -10,7 +10,7 @@ public class Query3 {
         int evenNumbers = 0;
         Random random = new Random();
         for(int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(99)+1;
+            array[i] = random.nextInt(100);
             System.out.println(array[i]);
             if(array[i] % 2 == 0){
                 evenNumbers++;

@@ -12,9 +12,9 @@ public class Query8 {
         int tmp1 = value % 10;
         int tmp2 = (value / 10) % 10;
 
-        if ((tmp1 == 2 | tmp1 == 3 | tmp1 == 4) & tmp2 == 1) {
+        if ((tmp1 == 2 || tmp1 == 3 || tmp1 == 4) & tmp2 == 1) {
             System.out.println(value + " рублей");
-        }else if(tmp1 == 2 | tmp1 == 3 | tmp1 == 4){
+        }else if(tmp1 == 2 || tmp1 == 3 || tmp1 == 4){
             System.out.println(value + " рубля");
         }else if(tmp1 == 1 & tmp2 != 1){
             System.out.println(value + " рубль");

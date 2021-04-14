@@ -11,7 +11,7 @@ public class Query4 {
         Random random = new Random();
 
         for (int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(21) + 1;
+            array[i] = random.nextInt(21);
             System.out.print(array[i] + " ");
         }
         System.out.println();

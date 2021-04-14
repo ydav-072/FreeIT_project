@@ -2,8 +2,8 @@ package ru.freeIt.homework.fromStudyBook;
 //Найдите сумму первых n целых чисел, которые делятся на 3
 public class Query12 {
     public static void main(String[] args) {
-        int value = 30;
-        searchSumInQuantity(value);
+        int value = 10;
+        searchSumInRange(value);
         searchSumInQuantity(value);
     }
 

@@ -16,7 +16,6 @@ public class Query10 {
         int index = 0;
         int[] array;
         int[] array2;
-        int lengthTwiceArray = 0;
 
         Random random = new Random();
 
@@ -34,12 +33,11 @@ public class Query10 {
         for (int i = 0; i < array.length; i++){
             array[i] = random.nextInt(n+1);
             System.out.print(array[i] + " ");
-            if (array[i] % 2 == 0 & array[i] != 0){
-                lengthTwiceArray++;
-            }
         }
+
         System.out.println();
-        array2 = new int[lengthTwiceArray];
+
+        array2 = new int[array.length/2];
         for (int i = 0; i < array.length; i++){
             if (array[i] % 2 == 0 & array[i] != 0){
                 array2[index] = array[i];
