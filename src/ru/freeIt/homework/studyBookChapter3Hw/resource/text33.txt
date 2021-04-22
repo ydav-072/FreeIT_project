@@ -1,0 +1,2 @@
+it is cool story, I can write in file text and other data!
+ Test new line text, it is amazing.
