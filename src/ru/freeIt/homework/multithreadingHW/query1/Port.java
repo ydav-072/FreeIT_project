@@ -7,10 +7,6 @@ public class Port {
     private int totalCapacityContainersOfPort;
     private int valueOfContainersInPort;
 
-    public void pierRequest() {
-
-    }
-
     public Semaphore getPier() {
         return pier;
     }
