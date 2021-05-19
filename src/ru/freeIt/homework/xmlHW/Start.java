@@ -39,9 +39,8 @@ public class Start {
         XmlBuilder xmlBuilder = new XmlBuilder();
         xmlBuilder.writeToXmlFile(deviceToFile, createFile);
 
-        Device deviceFromFile = new Device();
-        deviceFromFile = xmlBuilder.readFromFileToObj(fileXml);
-        System.out.println(deviceFromFile.getDevice().get(0).toString());
+        Device deviceFromFile = xmlBuilder.readFromFileToObj(fileXml);
+        System.out.println(deviceFromFile.getDevice().get(0));
 
         xmlBuilder.validation(fileXml, fileXsd);
 

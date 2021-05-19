@@ -6,21 +6,21 @@
         <origin>China</origin>
         <price>567</price>
         <type>Laptop</type>
-        <peripheral>true</peripheral>
+        <peripheral>TRUE</peripheral>
         <energy>350</energy>
-        <isColler>true</isColler>
+        <isCooler>TRUE</isCooler>
         <interfaces>USB</interfaces>
-        <isCritical>true</isCritical>
+        <isCritical>TRUE</isCritical>
     </Electronics>
     <Electronics id="2">
         <name>Gygabit</name>
         <origin>China</origin>
         <price>237.8</price>
         <type>Motherboard</type>
-        <peripheral>false</peripheral>
+        <peripheral>FALSE</peripheral>
         <energy>150</energy>
-        <isColler>true</isColler>
+        <isCooler>TRUE</isCooler>
         <interfaces>COM</interfaces>
-        <isCritical>true</isCritical>
+        <isCritical>TRUE</isCritical>
     </Electronics>
 </Devices>
