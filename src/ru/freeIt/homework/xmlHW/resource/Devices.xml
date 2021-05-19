@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <!--File name: Devices.xml -->
 <Devices>
+
     <Electronics id="1">
         <name>HP</name>
         <origin>China</origin>
@@ -23,4 +24,5 @@
         <interfaces>COM</interfaces>
         <isCritical>TRUE</isCritical>
     </Electronics>
+
 </Devices>

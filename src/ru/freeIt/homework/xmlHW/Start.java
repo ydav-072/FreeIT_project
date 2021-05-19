@@ -23,7 +23,7 @@ import java.util.List;
 public class Start {
     public static void main(String[] args) {
         File fileXml = new File("src/ru/freeIt/homework/xmlHW/resource/Devices.xml");
-        File fileXsd = new File("ru/freeIt/homework/xmlHW/Validation.xsd");
+        File fileXsd = new File("ru/freeIt/homework/xmlHW/resource/Validation.xsd");
         File createFile = new File("src/ru/freeIt/homework/xmlHW/resource/Create.xml");
 
 
@@ -41,7 +41,6 @@ public class Start {
 
         Device deviceFromFile = xmlBuilder.readFromFileToObj(fileXml);
         System.out.println(deviceFromFile.getDevice().get(0));
-
         xmlBuilder.validation(fileXml, fileXsd);
 
     }
