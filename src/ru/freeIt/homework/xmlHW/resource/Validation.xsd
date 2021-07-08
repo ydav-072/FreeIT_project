@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Devices" type="DevicesType"/>
+    <xs:complexType name="ElectronicsType">
+        <xs:sequence>
+            <xs:element name="name">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[a-z]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="origin">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[a-z]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="price">
+                <xs:simpleType>
+                    <xs:restriction base="xs:float">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="20000"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="type">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Motherboard"/>
+                        <xs:enumeration value="Laptop"/>
+                        <xs:enumeration value="Desktop"/>
+                        <xs:enumeration value="Processor"/>
+                        <xs:enumeration value="HDD"/>
+                        <xs:enumeration value="VideoCard"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="peripheral">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="TRUE"/>
+                        <xs:enumeration value="FALSE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:short" name="energy"/>
+            <xs:element type="xs:string" name="interfaces">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="USB"/>
+                        <xs:enumeration value="COM"/>
+                        <xs:enumeration value="LPT"/>
+                        <xs:enumeration value="PCIx16E"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="isCooler">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="TRUE"/>
+                        <xs:enumeration value="FALSE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="isCritical">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="TRUE"/>
+                        <xs:enumeration value="FALSE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="DevicesType">
+        <xs:sequence>
+            <xs:element type="ElectronicsType" name="Electronics" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
