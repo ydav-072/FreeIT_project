@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--File name: Devices.xml -->
+<Devices>
+
+    <Electronics id="1">
+        <name>HP</name>
+        <origin>China</origin>
+        <price>567</price>
+        <type>Laptop</type>
+        <peripheral>TRUE</peripheral>
+        <energy>350</energy>
+        <isCooler>TRUE</isCooler>
+        <interfaces>USB</interfaces>
+        <isCritical>TRUE</isCritical>
+    </Electronics>
+    <Electronics id="2">
+        <name>Gygabit</name>
+        <origin>China</origin>
+        <price>237.8</price>
+        <type>Motherboard</type>
+        <peripheral>FALSE</peripheral>
+        <energy>150</energy>
+        <isCooler>TRUE</isCooler>
+        <interfaces>COM</interfaces>
+        <isCritical>TRUE</isCritical>
+    </Electronics>
+
+</Devices>
